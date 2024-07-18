@@ -72,21 +72,25 @@ body, html {
 }
 
 .hero-content {
+    font-weight: bold;
+    text-shadow: -10px 0 10px rgba(0, 0, 0, 1);
     position: relative;
     padding-top: 200px;
 }
 
 .hero-content h1 {
+    color:whitesmoke;
     font-size: 3em;
     margin: 0;
 }
 
 .hero-content a {
+    
     display: inline-block;
     margin-top: 20px;
-    color: white;
+    color: whitesmoke;
     text-decoration: none;
-    border-bottom: 1px solid white;
+    border-bottom: none;
 }
 
 .rental-options {
