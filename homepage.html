@@ -7,28 +7,30 @@
     <title>Document</title>
 </head>
 <body>
-   <div id=" p1">
-    <div class="white"></div>
-    <div class="gray"></div>
-   </div>
+    <div id="p1">
+        <div class="white"></div>
+        <div class="gray"></div>
+    </div>
     <div class="container" id="p2">
         <div class="hero">
             <div class="background-image"></div>
             <nav>
-                <div>
+                <div class="logo"></div>
+                <div class="navitems">
+                    <div class="user" href="#"></div>
                     <button
-                      onclick="this.querySelector('span').classList.toggle('is-closed')"
-                      class="buttonb"
+                        onclick="this.querySelector('span').classList.toggle('is-closed')"
+                        class="buttonb"
                     >
-                      <span class="burger">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
-                          <path
-                            class="line line-top-bottom"
-                            d="M27 10 13 10C10.8 10 9 8.2 9 6 9 3.5 10.8 2 13 2 15.2 2 17 3.8 17 6L17 26C17 28.2 18.8 30 21 30 23.2 30 25 28.2 25 26 25 23.8 23.2 22 21 22L7 22"
-                          ></path>
-                          <path class="line" d="M7 16 27 16"></path>
-                        </svg>
-                      </span>
+                        <span class="burger">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+                                <path
+                                    class="line line-top-bottom"
+                                    d="M27 10 13 10C10.8 10 9 8.2 9 6 9 3.5 10.8 2 13 2 15.2 2 17 3.8 17 6L17 26C17 28.2 18.8 30 21 30 23.2 30 25 28.2 25 26 25 23.8 23.2 22 21 22L7 22"
+                                ></path>
+                                <path class="line" d="M7 16 27 16"></path>
+                            </svg>
+                        </span>
                     </button>
                 </div>
             </nav>
@@ -43,57 +45,62 @@
             </div>
         </div>
         <div class="search-form" id="p3">
-            <input type="text" placeholder="Your destination">
-            <input type="date" placeholder="Pick-up date">
-            <input type="date" placeholder="Drop-off date">
+            <input type="text" placeholder="search a car">
             <button>Find a car</button>
         </div>
         <div class="content"> 
-         <div class="fleet">
-            <h2>Our Fleet</h2>
-            <div class="fleet-items">
-                <div class="fleet-item">
-                    <img src="path/to/car2.jpg" alt="Car 2">
-                    <h3>Mercedes-AMG GT R</h3>
-                    <p>Cabriolet</p>
-                    <p>$789 per day</p>
-                    <button>Rent a car &rarr;</button>
-                </div>
-                
-                <div class="fleet-item">
-                    <img src="path/to/car3.jpg" alt="Car 3">
-                    <h3>Mercedes E 200</h3>
-                    <p>Limousine</p>
-                    <p>$189 per day</p>
-                    <button>Rent a car &rarr;</button>
-                </div>
-                
-                
-            </div>
-          </div>
-          <div class="advantages">
-            <h2>Advantages</h2>
-            <div class="advantage-items">
-                <div class="advantage-item">
-                    <img src="path/to/icon1.png" alt="Advantage 1">
-                    <h3>24/7 Customer Online Support</h3>
-                    <p>Call us Anywhere Anytime</p>
-                </div>
-                
-                <div class="advantage-item">
-                    <img src="path/to/icon2.png" alt="Advantage 2">
-                    <h3>Reservation Anytime You Want</h3>
-                    <p>24/7 Online Reservation</p>
-                </div>
-                
-                <div class="advantage-item">
-                    <img src="path/to/icon3.png" alt="Advantage 3">
-                    <h3>Lots of Picking Locations</h3>
-                    <p>250+ Locations</p>
+            <div class="most">
+                <h2>Most Popular</h2>
+                <div class="most-items">
+                    <div class="most-item" id="m1">
+                        <img src="image/m2/m2f.png" alt="Car 1">
+                        <h3>BMW M2</h3>
+                        <p>Coupe</p>
+                        <p>$379 per day</p>
+                        <button>Rent a car &rarr;</button>
+                    </div>
+                    <div class="most-item" id="m2">
+                        <img src="image/polo/polof.png" alt="Car 2">
+                        <h3>VW Polo</h3>
+                        <p>Limousine</p>
+                        <p>$39 per day</p>
+                        <button>Rent a car &rarr;</button>
+                    </div>
+                    <div class="most-item" id="m3">
+                        <img src="image/sclass/sf.PNG" alt="Car 3">
+                        <h3>Mercedes E 200</h3>
+                        <p>Limousine</p>
+                        <p>$189 per day</p>
+                        <button>Rent a car &rarr;</button>
+                    </div>
                 </div>
             </div>
-        </div>
+            <div class="advantages">
+                <h2>Advantages</h2>
+                <div class="advantage-items">
+                    <div class="advantage-item">
+                        <img src="path/to/icon1.png" alt="Advantage 1">
+                        <h3>24/7 Customer Online Support</h3>
+                        <p>Call us Anywhere Anytime</p>
+                    </div>
+                    <div class="advantage-item">
+                        <img src="path/to/icon2.png" alt="Advantage 2">
+                        <h3>Reservation Anytime You Want</h3>
+                        <p>24/7 Online Reservation</p>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
+    <script>
+        document.querySelectorAll('.most button').forEach(button => {
+            button.addEventListener('mouseover', function() {
+                this.closest('.most-item').classList.add('most-item-hover');
+            });
+            button.addEventListener('mouseout', function() {
+                this.closest('.most-item').classList.remove('most-item-hover');
+            });
+        });
+    </script>
 </body>
 </html>
