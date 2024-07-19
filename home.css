@@ -144,6 +144,37 @@ body, html {
     cursor: pointer;
 }
 
+.filter-options {
+    display: none;
+    position: absolute;
+    background-color: white;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    width: 200px;
+    border-radius: 5px;
+    margin-top: 5px;
+}
+
+.filter-options.show {
+    display: block;
+}
+
+.filter-option {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    border: none;
+    background: none;
+    width: 100%;
+}
+
+.filter-option:hover {
+    background-color: #ddd;
+}
+
+
 .most {
     padding: 50px;
     background-color: #f5f5f5;
@@ -184,6 +215,10 @@ body, html {
     width: 100%;
     border-bottom: 1px solid #ddd;
     margin-bottom: 15px;
+}
+
+#m5 img{
+    transform: scaleX(-1) ;
 }
 
 .most button {
