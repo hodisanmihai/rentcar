@@ -59,28 +59,28 @@
             <div class="most">
                 <h2>Most Popular</h2>
                 <div class="most-items">
-                    <div class="most-item" data-category="most-popular" data-category="luxury" id="m1">
+                    <div class="most-item" data-category="most-popular sport" id="m1">
                         <img src="image/m2/m2f.png" alt="Car 1">
                         <h3>BMW M2</h3>
                         <p>Sport</p>
                         <p>$379 per day</p>
                         <button>Rent a car &rarr;</button>
                     </div>
-                    <div class="most-item" data-category="most-popular" data-category="city" id="m2">
+                    <div class="most-item" data-category="most-popular city" id="m2">
                         <img src="image/polo/polof.png" alt="Car 2">
                         <h3>VW Polo</h3>
                         <p>City</p>
                         <p>$39 per day</p>
                         <button>Rent a car &rarr;</button>
                     </div>
-                    <div class="most-item" data-category="most-popular" data-category="luxury" id="m3">
+                    <div class="most-item" data-category="most-popular luxury" id="m3">
                         <img src="image/sclass/sf.PNG" alt="Car 3">
                         <h3>Mercedes S 580</h3>
                         <p>Limousine</p>
                         <p>$669 per day</p>
                         <button>Rent a car &rarr;</button>
                     </div>
-                    <div class="most-item" data-category="sport" id="m4">
+                    <div class="most-item" data-category="luxury" id="m4">
                         <img src="image/7/7f.PNG" alt="Car 4">
                         <h3>BMW 740i</h3>
                         <p>Limousine</p>
@@ -95,24 +95,10 @@
                         <button>Rent a car &rarr;</button>
                     </div>
                     <div class="most-item" data-category="sport" id="m6">
-                        <img src="image/sport/sf.PNG" alt="Car 6">
-                        <h3>Porsche 911</h3>
+                        <img src="image/m4/m4f.png" alt="Car 6">
+                        <h3>BMW M4</h3>
                         <p>Sport</p>
-                        <p>$499 per day</p>
-                        <button>Rent a car &rarr;</button>
-                    </div>
-                    <div class="most-item" data-category="sport" id="m7">
-                        <img src="image/sport/sf.PNG" alt="Car 7">
-                        <h3>Porsche 911</h3>
-                        <p>Sport</p>
-                        <p>$499 per day</p>
-                        <button>Rent a car &rarr;</button>
-                    </div>
-                    <div class="most-item" data-category="sport" id="m4">
-                        <img src="image/sport/sf.PNG" alt="Car 8">
-                        <h3>Porsche 911</h3>
-                        <p>Sport</p>
-                        <p>$499 per day</p>
+                        <p>$399 per day</p>
                         <button>Rent a car &rarr;</button>
                     </div>
                 </div>
@@ -139,11 +125,11 @@
             document.getElementById('filterOptions').classList.toggle('show');
         });
 
-
         function filterItems(criteria) {
             const items = document.querySelectorAll('.most-item');
             items.forEach(item => {
-                if (criteria === 'all' || item.dataset.category === criteria) {
+                const categories = item.dataset.category.split(' ');
+                if (criteria === 'all' || categories.includes(criteria)) {
                     item.style.display = 'block';
                 } else {
                     item.style.display = 'none';
