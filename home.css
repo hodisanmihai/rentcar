@@ -425,48 +425,35 @@ nav {
     background-color: rgba(255, 255, 255, 0.05);
 }
 
-/* General styles remain unchanged */
 
-/* Center bar styles */
 .nav-menu {
     position: absolute;
     top: 31%;
     left: 65%;
-    transform: translate(-50%, -50%);
+    transform: translate(15%,  -50%);
     width: 600px;
     max-width: 90%;
-    /* Responsive width */
     max-height: 90%;
-    /* Responsive height */
     background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1));
-    /* Matching gradient */
     backdrop-filter: blur(10px);
     border: 1px solid rgba(255, 255, 255, 0.18);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
     z-index: 1001;
-    /* Above other elements */
     display: flex;
     flex-direction: column;
     justify-content: center;
-    /* Center content vertically */
     align-items: center;
-    /* Center content horizontally */
     visibility: hidden;
-    /* Hidden by default */
     opacity: 0;
-    /* Fully transparent */
-    transition: visibility 0s, opacity 0.3s ease, transform 0.3s ease;
-    /* Smooth transitions */
+    transition: visibility 1s, opacity 0.3s ease, transform 0.3s ease;
+    
 }
 
 .nav-menu.active {
     visibility: visible;
-    /* Make visible */
     opacity: 1;
-    /* Fully opaque */
     transform: translate(-50%, -50%) scale(1.05);
-    /* Slight zoom effect */
 }
 
 .nav-menu ul {
@@ -474,14 +461,11 @@ nav {
     padding: 0;
     margin: 0;
     width: 100%;
-    /* Full width for centering items */
     text-align: center;
-    /* Center text within items */
 }
 
 .nav-menu li {
     padding: 15px 0;
-    /* Space around each item */
     border-bottom: 1px solid #ccc;
 }
 
@@ -490,12 +474,10 @@ nav {
     color: #333;
     font-weight: bold;
     display: block;
-    /* Make link block-level for better padding control */
     width: 100%;
-    /* Full width for easy clicking */
 }
 
-/* Burger button and other styles unchanged */
+
 
 .user:hover {
     background-color: #9fe9ff;
