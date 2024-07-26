@@ -45,14 +45,30 @@
             </div>
         </div>
         <div class="search-form" id="p3">
-            <input type="text" placeholder="search a car">
-            <button id="filterToggleButton">Filters</button>
-            <div id="filterOptions" class="filter-options">
-                <button onclick="filterItems('all')">All Cars</button>
-                <button onclick="filterItems('most-popular')">Most Popular</button>
-                <button onclick="filterItems('luxury')">Luxury</button>
-                <button onclick="filterItems('city')">City</button>
-                <button onclick="filterItems('sport')">Sport</button>
+           
+            <input type="text" class="inpc" placeholder="search a car">
+            <div class="select-menu">
+                <div class="select-btn">
+                    <span class="sBtn-text" id="filterToggleButton" >All cars</span>
+                </div>
+    
+                <ul class="options" id="filterOptions">
+                    <li class="option" onclick="filterItems('most-popular')">
+                        <span class="option-text">Most Popular</span>
+                    </li>
+                    <li class="option" onclick="filterItems('all')">
+                        <span class="option-text" >All Cars</span>
+                    </li>
+                    <li class="option" onclick="filterItems('luxury')">
+                        <span class="option-text">Luxury</span>
+                    </li>
+                    <li class="option" onclick="filterItems('sport')">
+                        <span class="option-text" >Sport</span>
+                    </li>
+                    <li class="option" onclick="filterItems('city')">
+                        <span class="option-text">City</span>
+                    </li>                
+                </ul>
             </div>
         </div>
         <div class="content"> 
@@ -120,31 +136,6 @@
             </div>
         </div>
     </div>
-    <script>
-        document.getElementById('filterToggleButton').addEventListener('click', function() {
-            document.getElementById('filterOptions').classList.toggle('show');
-        });
-
-        function filterItems(criteria) {
-            const items = document.querySelectorAll('.most-item');
-            items.forEach(item => {
-                const categories = item.dataset.category.split(' ');
-                if (criteria === 'all' || categories.includes(criteria)) {
-                    item.style.display = 'block';
-                } else {
-                    item.style.display = 'none';
-                }
-            });
-        }
-
-        document.querySelectorAll('.most button').forEach(button => {
-            button.addEventListener('mouseover', function() {
-                this.closest('.most-item').classList.add('most-item-hover');
-            });
-            button.addEventListener('mouseout', function() {
-                this.closest('.most-item').classList.remove('most-item-hover');
-            });
-        });
-    </script>   
+    <script src="home.js"></script>
 </body>
 </html>
