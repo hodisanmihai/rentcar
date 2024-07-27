@@ -1,5 +1,4 @@
-body,
-html {
+body{
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
@@ -16,7 +15,7 @@ html {
 .gray {
     left: 0;
     background-color: rgb(199, 199, 199);
-    height: 10000px;
+    height: 1900px;
     width: 100%;
     z-index: -1;
     position: relative;
@@ -333,6 +332,16 @@ html {
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.advantages img{
+    width: 50%;
+    padding-bottom: 20px;
+}
+
+.adv1{
+    padding-top: 25px;
+   padding-bottom: 30px;
 }
 
 nav {
