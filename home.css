@@ -1,10 +1,15 @@
+html{
+    scroll-behavior: smooth;
+}
+
 body{
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
 }
 
-.white {
+
+.white1 {
     background-color: white;
     height: 600px;
     width: 100%;
@@ -12,10 +17,27 @@ body{
     position: relative;
 }
 
-.gray {
+.gray1 {
     left: 0;
     background-color: rgb(199, 199, 199);
     height: 1900px;
+    width: 100%;
+    z-index: -1;
+    position: relative;
+}
+
+.white2 {
+    background-color: white;
+    height: 450px;
+    width: 100%;
+    z-index: -1;
+    position: relative;
+}
+
+.gray2 {
+    left: 0;
+    background-color: rgb(199, 199, 199);
+    height: 790px;
     width: 100%;
     z-index: -1;
     position: relative;
@@ -326,7 +348,7 @@ body{
 }
 
 .advantage-item {
-    width: 30%;
+    width: 20%;
     margin: 20px 0;
     background-color: white;
     padding: 20px;
@@ -343,6 +365,23 @@ body{
     padding-top: 25px;
    padding-bottom: 30px;
 }
+
+.moreinfo {
+    padding: 50px;
+    text-align: center;
+}
+
+.moreinfo h2 {
+    margin: 0 0 30px;
+    font-size: 34px;
+}
+
+.infoitems li{
+    font-size: 21px;
+    list-style-type: none;
+}
+
+
 
 nav {
     border-radius: 30px;
@@ -428,7 +467,7 @@ nav {
     background-image: url('image/user.png');
     background-size: cover;
     width: 40px;
-    height: 40px;
+    height: 36px;
     border-radius: 10%;
     left: 10px;
     background-color: rgba(255, 255, 255, 0.05);
