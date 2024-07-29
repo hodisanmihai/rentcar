@@ -12,6 +12,25 @@ function filterItems(criteria) {
             item.style.display = 'none';
         }
     });
+
+    const categoryTitle = document.getElementById('category-title');
+    switch(criteria) {
+        case 'most-popular':
+            categoryTitle.innerText = 'Most Popular';
+            break;
+        case 'luxury':
+            categoryTitle.innerText = 'Luxury';
+            break;
+        case 'sport':
+            categoryTitle.innerText = 'Sport';
+            break;
+        case 'city':
+            categoryTitle.innerText = 'City';
+            break;
+        default:
+            categoryTitle.innerText = 'All Cars';
+            break;
+    }
 }
 
 document.querySelectorAll('.most button').forEach(button => {
