@@ -28,7 +28,7 @@ body {
     z-index: 2;
     border-radius: 30px;
     border: 2px solid black;
-    filter: blur(2px);
+    
 }
 
 .white {

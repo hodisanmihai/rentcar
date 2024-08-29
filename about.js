@@ -7,7 +7,7 @@ frontElements.forEach(formContainer => {
     });
 
     formContainer.addEventListener('mouseleave', () => {
-        document.querySelector('.wallpaper').style.filter = 'blur(2px)';
+        document.querySelector('.wallpaper').style.filter = 'blur(0px)';
         document.querySelector('.white').style.filter = 'blur(1px)';
     });
 });
