@@ -87,7 +87,8 @@ nav {
 
 .buttonb:hover {
     opacity: 1;
-    background: linear-gradient(45deg, rgb(16, 137, 211) 0%, rgb(18, 177, 209) 100%);;
+    background: linear-gradient(45deg, rgb(16, 137, 211) 0%, rgb(18, 177, 209) 100%);
+    ;
 }
 
 .burger {
@@ -190,160 +191,195 @@ nav {
     margin-top: -25px;
 }
 
-.formcont {
-    position: relative;
+.elements {
     z-index: 2;
+    position: absolute;
+    top:45%;
+    left:27%;
+    display: flex;
+    justify-content: space-between;
+    gap:100px;
+    align-items: center;
+}
+
+
+.card {
+    overflow: hidden;
+    width: 225px;
+    height: 324px;
+}
+
+.content {
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: transform 300ms;
+    box-shadow: 0px 0px 10px 1px #000000ee;
+    border-radius: 5px;
+}
+
+.front,
+.back {
+    background-color: #151515;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.back {
+    width: 100%;
+    height: 100%;
+    justify-content: center;
     display: flex;
     align-items: center;
-    justify-content: center;
-    top: 40%;
-    width: 100%;
-    height: 10%;
+    overflow: hidden;
 }
 
-.container:hover~.wallpaper {
-    filter: blur(10px);
-}
-
-.container:hover~.white {
-    filter: blur(2px);
-}
-
-.container {
-    max-width: 350px;
-    background: #F8F9FD;
-    background: linear-gradient(0deg, rgb(255, 255, 255) 0%, rgb(244, 247, 251) 100%);
-    border-radius: 40px;
-    padding: 25px 35px;
-    border: 5px solid rgb(255, 255, 255);
-    box-shadow: rgba(133, 189, 215, 0.8784313725) 0px 30px 30px -20px;
-    margin: 20px;
-}
-
-.heading {
-    text-align: center;
-    font-weight: 900;
-    font-size: 30px;
-    color: rgb(16, 137, 211);
-}
-
-.form {
-    margin-top: 20px;
-}
-
-.form .input {
-    width: 95%;
-    background: white;
-    border: none;
-    padding: 15px 20px;
-    border-radius: 20px;
-    margin-top: 15px;
-    box-shadow: #cff0ff 0px 10px 10px -5px;
-    border-inline: 2px solid transparent;
-}
-
-.form .input::-moz-placeholder {
-    color: rgb(170, 170, 170);
-}
-
-.form .input::placeholder {
-    color: rgb(170, 170, 170);
-}
-
-.form .input:focus {
-    outline: none;
-    border-inline: 2px solid #12B1D1;
-}
-
-.form .forgot-password {
+.back::before {
+    position: absolute;
+    content: ' ';
     display: block;
-    margin-top: 10px;
-    margin-left: 10px;
+    width: 160px;
+    height: 160%;
+    background: linear-gradient(90deg, transparent, #12B1D1, #12B1D1, #12B1D1, #12B1D1, transparent);
+    animation: rotation_481 5000ms infinite linear;
 }
 
-.form .forgot-password a {
-    font-size: 11px;
-    color: #0099ff;
-    text-decoration: none;
-}
-
-.form .login-button {
-    display: block;
-    width: 100%;
-    font-weight: bold;
-    background: linear-gradient(45deg, rgb(16, 137, 211) 0%, rgb(18, 177, 209) 100%);
+.back-content {
+    position: absolute;
+    width: 99%;
+    height: 99%;
+    background-color: #151515;
+    border-radius: 5px;
     color: white;
-    padding-block: 15px;
-    margin: 20px auto;
-    border-radius: 20px;
-    box-shadow: rgba(133, 189, 215, 0.8784313725) 0px 20px 10px -15px;
-    border: none;
-    transition: all 0.2s ease-in-out;
-}
-
-.form .login-button:hover {
-    transform: scale(1.03);
-    box-shadow: rgba(133, 189, 215, 0.8784313725) 0px 23px 10px -20px;
-}
-
-.form .login-button:active {
-    transform: scale(0.95);
-    box-shadow: rgba(133, 189, 215, 0.8784313725) 0px 15px 10px -10px;
-}
-
-.social-account-container {
-    margin-top: 25px;
-}
-
-.social-account-container .title {
-    display: block;
-    text-align: center;
-    font-size: 10px;
-    color: rgb(170, 170, 170);
-}
-
-.social-account-container .social-accounts {
-    width: 100%;
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    gap: 15px;
+    align-items: center;
+    gap: 30px;
+}
+
+.card:hover .content {
+    transform: rotateY(180deg);
+}
+
+@keyframes rotation_481 {
+    0% {
+        transform: rotateZ(0deg);
+    }
+
+    0% {
+        transform: rotateZ(360deg);
+    }
+}
+
+.front {
+    transform: rotateY(180deg);
+    color: white;
+}
+
+.front .front-content {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.badgemiddle{
+    background-color: #00000055;
+        padding: 12px 12px;
+        border-radius: 10px;
+        backdrop-filter: blur(2px);
+        width: fit-content;
+}
+
+.front-content .badge {
+    background-color: #00000055;
+    padding: 2px 10px;
+    border-radius: 10px;
+    backdrop-filter: blur(2px);
+    width: fit-content;
+}
+
+.description {
+    box-shadow: 0px 0px 10px 5px #00000088;
+    width: 100%;
+    padding: 10px;
+    background-color: #00000099;
+    backdrop-filter: blur(5px);
+    border-radius: 5px;
+}
+
+.title {
+    font-size: 11px;
+    max-width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.title p {
+    width: 50%;
+}
+
+.card-footer {
+    color: #ffffff88;
     margin-top: 5px;
+    font-size: 8px;
 }
 
-.social-account-container .social-accounts .social-button {
-    background: linear-gradient(45deg, rgb(0, 0, 0) 0%, rgb(112, 112, 112) 100%);
-    border: 5px solid white;
-    padding: 5px;
+.front .img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.circle {
+    width: 90px;
+    height: 90px;
     border-radius: 50%;
-    width: 40px;
-    aspect-ratio: 1;
-    display: grid;
-    place-content: center;
-    box-shadow: rgba(133, 189, 215, 0.8784313725) 0px 12px 10px -8px;
-    transition: all 0.2s ease-in-out;
+    background-color: #0099ff;
+    position: relative;
+    filter: blur(15px);
+    animation: floating 2600ms infinite linear;
 }
 
-.social-account-container .social-accounts .social-button .svg {
-    fill: white;
-    margin: auto;
+#bottom {
+    background-color: #226fff;
+    left: 50px;
+    top: 0px;
+    width: 150px;
+    height: 150px;
+    animation-delay: -800ms;
 }
 
-.social-account-container .social-accounts .social-button:hover {
-    transform: scale(1.2);
+#right {
+    background-color: gray;
+    left: 160px;
+    top: -80px;
+    width: 30px;
+    height: 30px;
+    animation-delay: -1800ms;
 }
 
-.social-account-container .social-accounts .social-button:active {
-    transform: scale(0.9);
-}
+@keyframes floating {
+    0% {
+        transform: translateY(0px);
+    }
 
-.agreement {
-    display: block;
-    text-align: center;
-    margin-top: 15px;
-}
+    50% {
+        transform: translateY(10px);
+    }
 
-.agreement a {
-    text-decoration: none;
-    color: #0099ff;
-    font-size: 9px;
+    100% {
+        transform: translateY(0px);
+    }
 }

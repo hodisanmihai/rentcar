@@ -359,7 +359,7 @@ body{
 }
 
 .advantages img{
-    filter: invert(51%) sepia(77%) saturate(573%) hue-rotate(149deg) brightness(96%) contrast(90%);
+    filter: invert(49%) sepia(84%) saturate(579%) hue-rotate(140deg) brightness(95%) contrast(95%);
     width: 50%;
     padding-bottom: 20px;
 }
@@ -429,7 +429,7 @@ nav {
 
 .buttonb:hover {
     opacity: 1;
-    background: #9fe9ff;
+    background: #12B1D1;
 }
 
 .burger {
@@ -521,6 +521,8 @@ nav {
 }
 
 .nav-menu a {
+    font-family: arial ;
+    text-shadow: 1px 1px black;
     text-decoration: none;
     color: #12B1D1;
     font-weight: bold;
@@ -531,7 +533,7 @@ nav {
 
 
 .user:hover {
-    background-color: #9fe9ff;
+    background-color: #12B1D1;
 }
 
 .logo {
