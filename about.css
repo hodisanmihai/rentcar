@@ -376,7 +376,7 @@ nav {
     }
 
     50% {
-        transform: translateY(10px);
+        transform: translateY(20px);
     }
 
     100% {
