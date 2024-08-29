@@ -221,14 +221,21 @@ nav {
 }
 
 .heading {
+    font-family: Arial;
     text-align: center;
-    font-weight: 900;
+    font-weight: 850;
     font-size: 30px;
     color: rgb(16, 137, 211);
 }
 
 .form {
     margin-top: 20px;
+}
+
+.middletext{
+    padding-top: 10px;
+    justify-content: space-between;
+    display: flex;
 }
 
 .form .input {
