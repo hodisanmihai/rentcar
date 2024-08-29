@@ -364,6 +364,11 @@ body{
     padding-bottom: 20px;
 }
 
+.advantagep {
+    font-family:helvetica;
+    font-weight: 500;
+}
+
 .adv1{
     padding-top: 25px;
    padding-bottom: 30px;
@@ -372,11 +377,16 @@ body{
 .moreinfo {
     padding: 50px;
     text-align: center;
+
 }
 
 .moreinfo h2 {
     margin: 0 0 30px;
     font-size: 34px;
+    color: #12B1D1;
+    font-weight: 900;
+    text-shadow: 2px 2px 1px black;
+    font-family: Arial;
 }
 
 .infoitems li{
@@ -391,8 +401,8 @@ nav {
     background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
     backdrop-filter: blur(10px);
     border: 1px solid rgba(255, 255, 255, 0.18);
-    left: 10%;
-    width: 80%;
+    left: 6%;
+    width: 85%;
     padding: 1px 30px;
     position: absolute;
     top: 0;
