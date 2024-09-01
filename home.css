@@ -489,8 +489,8 @@ nav {
 
 .nav-menu {
     position: absolute;
-    top: 31%;
-    left: 78%;
+    top: 25%;
+    left: 77.5%;
     transform: translate(15%,  -50%);
     width: 600px;
     max-width: 90%;
