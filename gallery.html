@@ -4,15 +4,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SingIn/SingUp</title>
+    <title>Gallery</title>
     <link rel="stylesheet" href="gallery.css">
 </head>
 
 <body>
     <div class="background">
         <div class="wallpaper"></div>
-        <div class="white"></div>
-        <nav>
+        <nav class="nav">
             <a href="homepage.html" class="logo"></a>
             <div class="navitems">
                 <button onclick="this.querySelector('span').classList.toggle('is-closed')" class="buttonb">
@@ -36,9 +35,61 @@
             </ul>
         </div>
     </div>
+    <div class="white">
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+            integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+        <div class="container">
+
+            <div class="slide">
 
 
-        <script src="gallery.js"></script>
+                <div class="item" style="background-image: url(image/gallery/yarisgrwall.jpg);" id="item-1">
+                    <div class="content">
+                        <div class="name">Yaris GR</div>
+                    </div>
+                </div>
+                <div class="item" style="background-image: url(image/gallery/740iwall.jpg);" id="740i">
+                    <div class="content">
+                        <div class="name">BMW 740I</div>
+                    </div>
+                </div>
+                <div class="item" style="background-image: url(image/gallery/m2.wall.jpg);" id="M2">
+                    <div class="content">
+                        <div class="name">BMW M2</div>
+                    </div>
+                </div>
+                <div class="item" style="background-image: url(image/gallery/m4wall.jpg);" id="M4">
+                    <div class="content">
+                        <div class="name">BMW M4</div>
+                    </div>
+                </div>
+                <div class="item" style="background-image: url(image/gallery/polowall.jpg);" id="POLO">
+                    <div class="content">
+                        <div class="name">Volkswagen Polo</div>
+                    </div>
+                </div>
+                <div class="item" style="background-image: url(image/gallery/s580wall.jpg);" id="s580">
+                    <div class="content">
+                        <div class="name">Mercedes S580</div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="button">
+                <button class="prev"><i class="fa-solid fa-arrow-left"></i></button>
+                <button class="next"><i class="fa-solid fa-arrow-right"></i></button>
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <script src="gallery.js"></script>
 </body>
 
-</html> 
+</html>
