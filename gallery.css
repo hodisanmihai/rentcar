@@ -201,6 +201,16 @@ nav {
     transform: translateY(75%);
 }
 
+.middletext{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateY(-50%);
+    margin-top: 45px;
+    font-size: 30px;
+    font-weight:700;
+    font-family: Arial, Helvetica, sans-serif;
+}
 
 .container {
     position: absolute;
@@ -218,7 +228,7 @@ nav {
     height: 300px;
     position: absolute;
     left: -100%;
-    top: 50%;
+    top:50%;
     transform: translate(150%, -50%);
     border-radius: 20px;
     box-shadow: 0 30px 50px #505050;
@@ -260,7 +270,7 @@ nav {
 
 .item .content {
     position: absolute;
-    top: 90%;
+    top: 89%;
     left: 5%;
     width: 300px;
     text-align: left;
