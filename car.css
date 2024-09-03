@@ -1,8 +1,7 @@
 body{
     overflow: hidden;
-}
-
-
+    margin: 0;
+ }
 nav {
     border-radius: 30px;
     background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
@@ -88,7 +87,7 @@ nav {
 
 .nav-menu {
     position: absolute;
-    top: 20%;
+    top: 18.5%;
     left: 81%;
     transform: translate(15%, -50%);
     width: 600px;
@@ -157,7 +156,9 @@ nav {
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    background-color: white;
+    background-image: url(image/whitebackground.jpg);
+    background-repeat: no-repeat;
+    background-size: 75%;
     overflow: hidden;
 }
 
@@ -318,7 +319,6 @@ nav {
     right: 33%;
     bottom: -7%;
     transform: translateX(50%);
-    background-image: url('image/m2/m2s.png');
     background-size: contain;
     background-repeat: no-repeat;
     width: 1000px;
@@ -494,7 +494,6 @@ nav {
       color: #555;
   }
 
-/* Highlight the selected date */
 .day.selected {
     background-color: #1ecd97;
     color: white;
