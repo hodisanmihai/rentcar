@@ -47,7 +47,6 @@ nav {
 .buttonb:hover {
     opacity: 1;
     background: linear-gradient(45deg, rgb(16, 137, 211) 0%, rgb(18, 177, 209) 100%);
-    ;
 }
 
 .burger {
@@ -341,15 +340,6 @@ nav {
     }
 }
 
-.sideelement {
-    position: absolute;
-    z-index: 3;
-    top: 0;
-    right: 0;
-    width: 25%;
-    height: 100vh;
-    background-image: linear-gradient(to bottom, #0099FF 30%, #12B1D1 65%);
-}
 
 .name {
     font-family: Arial, Helvetica, sans-serif;
@@ -379,3 +369,411 @@ nav {
     }
 }
 
+.sideelement {
+    position: absolute;
+    z-index: 3;
+    top: 0;
+    right: 0;
+    width: 25%;
+    height: 100vh;
+    background-image: linear-gradient(to bottom, #0099FF 30%, #12B1D1 65%);
+}
+
+.form{
+    position: relative;
+    margin-left: 12.5%;
+    padding: 20px;
+    display: grid;
+    align-items: center;
+    height: 70%;
+    top: 10%;
+        animation: animate 1.5s ease-in-out 1 forwards;
+        }
+        
+        @keyframes animate {
+            from {
+                opacity: 0;
+                transform: translate(-110px, 0px);
+                filter: blur(33px);
+            }
+        
+            to {
+                opacity: 1;
+                transform: translate(0);
+                filter: blur(0);
+            }
+        }
+
+.formtop{
+    padding-bottom: 0px;
+    font-family:sans-serif;
+}
+
+.titleform{
+    font-size: 30px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.description{
+    padding-top: 20px;
+    font-size: 20px;
+}
+
+.miniform{
+    padding-top: 0px;
+}   
+
+.check{
+   transform: translate(21% , 30px);
+   font-size: 18px;
+   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+   font-weight: 100;
+}
+
+  .calendar {
+      background-color: #111111;
+      border-radius: 10px;
+      box-shadow: 0 0 30px #222222;
+      overflow: hidden;
+      width: 300px;
+      color: white;
+      padding: 20px;
+  }
+
+  .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px;
+  }
+
+  .btn {
+      cursor: pointer;
+  }
+
+  #month-year {
+      font-weight: bold;
+      font-size: 20px;
+  }
+
+  .weekdays,
+  .days {
+      display: flex;
+      flex-wrap: wrap;
+  }
+
+  .days {
+      height: 240px;
+  }
+
+  .weekdays div,
+  .days div {
+      width: 14.28%;
+      text-align: center;
+      padding: 10px 0;
+      border-radius: 5px;
+  }
+
+  .days div {
+      cursor: pointer;
+      transition: background-color 0.3s;
+  }
+
+  .days div:hover {
+      background-color: white;
+      color: #12B1D1;
+  }
+
+  .days .today {
+      background-color: #12B1D1;
+      color: white;
+  }
+
+  .days .fade {
+      color: #555;
+  }
+
+/* Highlight the selected date */
+.day.selected {
+    background-color: #1ecd97;
+    color: white;
+    border-radius: 5px;
+}
+  
+#_checkbox {
+    display: none;
+}
+
+label {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    left: -20px;
+    width: 30px;
+    height: 30px;
+    margin: 0 auto;
+    background-color: #0066b2;
+    transform: translateY(-50%);
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.2s ease transform, 0.2s ease background-color, 0.2s ease box-shadow;
+    overflow: hidden;
+    z-index: 1;
+}
+
+label:before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 0;
+    left: 0;
+    width: 24px;
+    height: 23px;
+    margin: 0 auto;
+    background-color: #fff;
+    transform: translateY(-50%);
+    border-radius: 50%;
+    box-shadow: inset 0 7px 10px #0099FF;
+    transition: 0.2s ease width, 0.2s ease height;
+}
+
+label:hover:before {
+    transform: translateY(-50%) scale(1.1);
+    box-shadow: inset 0 7px 10px #0099ff;
+}
+
+label:active {
+    transform: translateY(-50%) scale(0.9);
+}
+
+#tick_mark {
+    position: absolute;
+    top: 0px;
+    right: 0;
+    left: 0;
+    width: 15px;
+    height: 18px;
+    margin: 0 auto;
+    margin-left: 5px;
+    transform: rotateZ(-40deg);
+}
+
+#tick_mark:before,
+#tick_mark:after {
+    content: "";
+    position: absolute;
+    background-color: #fff;
+    border-radius: 2px;
+    opacity: 0;
+    transition: 0.2s ease transform, 0.2s ease opacity;
+}
+
+#tick_mark:before {
+    left: 0;
+    bottom: 0;
+    width: 4px;
+    height: 10px;
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.23);
+    transform: translateY(-68px)
+}
+
+#tick_mark:after {
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 4px;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.23);
+    transform: translateX(78px)
+}
+
+#_checkbox:checked+label {
+    background-color: #0066b2;
+}
+
+#_checkbox:checked+label:before {
+    width: 0;
+    height: 0;
+}
+
+#_checkbox:checked+label #tick_mark:before,
+#_checkbox:checked+label #tick_mark:after {
+    transform: translate(0);
+    opacity: 1;
+}
+
+.input {
+    width: 65%;
+    transform: translateX(15%);
+    background: white;
+    border: none;
+    padding: 15px 12.5px;
+    border-radius: 20px;
+    margin-top: 15px;
+    box-shadow: #cff0ff 0px 10px 10px -5px;
+    border-inline: 2px solid transparent;
+}
+
+.input:focus {
+    outline: none;
+    border-inline: 2px solid #12B1D1;
+}
+
+.divrentbuttton{
+    top: 103%;
+    left: 40%;
+    position: absolute;
+}
+
+
+.btn-conteiner {
+    position: relative;
+    height: 50px;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    --color-text: #ffffff;
+    --color-background: linear-gradient(45deg, rgb(16, 137, 211) 0%, rgb(18, 177, 209) 100%);
+    --color-outline: #ff145b80;
+    --color-shadow: #00000080;
+}
+
+.btn-content {
+    display: flex;
+    align-items: center;
+    padding: 5px 30px;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 30px;
+    color: var(--color-text);
+    background: var(--color-background);
+    transition: 1s;
+    border-radius: 100px;
+    box-shadow: 0 0 0.2em 0 var(--color-background);
+}
+
+.btn-content:hover,
+.btn-content:focus {
+    transition: 0.5s;
+    -webkit-animation: btn-content 1s;
+    animation: btn-content 1s;
+    outline: 0.1em solid transparent;
+    outline-offset: 0.2em;
+    box-shadow: 0 0 0.4em 0 var(--color-background);
+}
+
+.btn-content .icon-arrow {
+    transition: 0.5s;
+    margin-right: 0px;
+    transform: scale(0.6);
+}
+
+.btn-content:hover .icon-arrow {
+    transition: 0.5s;
+    margin-right: 25px;
+}
+
+.icon-arrow {
+    width: 20px;
+    margin-left: 15px;
+    position: relative;
+    top: 6%;
+}
+
+
+#arrow-icon-one {
+    transition: 0.4s;
+    transform: translateX(-60%);
+}
+
+#arrow-icon-two {
+    transition: 0.5s;
+    transform: translateX(-30%);
+}
+
+.btn-content:hover #arrow-icon-three {
+    animation: color_anim 1s infinite 0.2s;
+}
+
+.btn-content:hover #arrow-icon-one {
+    transform: translateX(0%);
+    animation: color_anim 1s infinite 0.6s;
+}
+
+.btn-content:hover #arrow-icon-two {
+    transform: translateX(0%);
+    animation: color_anim 1s infinite 0.4s;
+}
+
+@keyframes color_anim {
+    0% {
+        fill: white;
+    }
+
+    50% {
+        fill: var(--color-background);
+    }
+
+    100% {
+        fill: white;
+    }
+}
+
+
+@-webkit-keyframes btn-content {
+    0% {
+        outline: 0.2em solid var(--color-background);
+        outline-offset: 0;
+    }
+}
+
+@keyframes btn-content {
+    0% {
+        outline: 0.2em solid var(--color-background);
+        outline-offset: 0;
+    }
+}
+
+#popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+#popupContent {
+    background: linear-gradient(45deg, rgb(16, 137, 211) 0%, rgb(18, 177, 209) 100%);;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    color: black;
+    text-shadow: 0.25px 0.25px 1px white;
+    font-family: arial;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+#popup.hidden {
+    display: none;
+}
+
+#closePopup {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #303030;
+    border: none;
+    border-radius: 5px;
+    color: whitesmoke;
+    cursor: pointer;
+}
+
+#closePopup:hover {
+    background-color: #606060;
+}
