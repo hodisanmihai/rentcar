@@ -1,0 +1,48 @@
+Date : 2024-09-04 00:03:18
+Directory : c:\Users\Hp\hodisanmihai.github-io\rentcar
+Total : 21 files,  3910 codes, 1 comments, 538 blanks, all 4449 lines
+
+Languages
++------------+------------+------------+------------+------------+------------+
+| language   | files      | code       | comment    | blank      | total      |
++------------+------------+------------+------------+------------+------------+
+| CSS        |          5 |      2,180 |          0 |        361 |      2,541 |
+| HTML       |         10 |      1,466 |          1 |        107 |      1,574 |
+| JavaScript |          5 |        263 |          0 |         70 |        333 |
+| Markdown   |          1 |          1 |          0 |          0 |          1 |
++------------+------------+------------+------------+------------+------------+
+
+Directories
++----------------------------------------------------------+------------+------------+------------+------------+------------+
+| path                                                     | files      | code       | comment    | blank      | total      |
++----------------------------------------------------------+------------+------------+------------+------------+------------+
+| .                                                        |         21 |      3,910 |          1 |        538 |      4,449 |
++----------------------------------------------------------+------------+------------+------------+------------+------------+
+
+Files
++----------------------------------------------------------+------------+------------+------------+------------+------------+
+| filename                                                 | language   | code       | comment    | blank      | total      |
++----------------------------------------------------------+------------+------------+------------+------------+------------+
+| c:\Users\Hp\hodisanmihai.github-io\rentcar\580.html      | HTML       |        129 |          0 |         11 |        140 |
+| c:\Users\Hp\hodisanmihai.github-io\rentcar\740.html      | HTML       |        129 |          0 |         11 |        140 |
+| c:\Users\Hp\hodisanmihai.github-io\rentcar\README.md     | Markdown   |          1 |          0 |          0 |          1 |
+| c:\Users\Hp\hodisanmihai.github-io\rentcar\about.css     | CSS        |        336 |          0 |         50 |        386 |
+| c:\Users\Hp\hodisanmihai.github-io\rentcar\about.html    | HTML       |        260 |          1 |         10 |        271 |
+| c:\Users\Hp\hodisanmihai.github-io\rentcar\about.js      | JavaScript |         15 |          0 |          6 |         21 |
+| c:\Users\Hp\hodisanmihai.github-io\rentcar\car.css       | CSS        |        665 |          0 |        113 |        778 |
+| c:\Users\Hp\hodisanmihai.github-io\rentcar\car.js        | JavaScript |         88 |          0 |         29 |        117 |
+| c:\Users\Hp\hodisanmihai.github-io\rentcar\gallery.css   | CSS        |        299 |          0 |         53 |        352 |
+| c:\Users\Hp\hodisanmihai.github-io\rentcar\gallery.html  | HTML       |         81 |          0 |         16 |         97 |
+| c:\Users\Hp\hodisanmihai.github-io\rentcar\gallery.js    | JavaScript |         34 |          0 |         10 |         44 |
+| c:\Users\Hp\hodisanmihai.github-io\rentcar\home.css      | CSS        |        533 |          0 |         93 |        626 |
+| c:\Users\Hp\hodisanmihai.github-io\rentcar\home.js       | JavaScript |         58 |          0 |          9 |         67 |
+| c:\Users\Hp\hodisanmihai.github-io\rentcar\homepage.html | HTML       |        204 |          0 |          4 |        208 |
+| c:\Users\Hp\hodisanmihai.github-io\rentcar\login.css     | CSS        |        347 |          0 |         52 |        399 |
+| c:\Users\Hp\hodisanmihai.github-io\rentcar\login.html    | HTML       |        147 |          0 |         11 |        158 |
+| c:\Users\Hp\hodisanmihai.github-io\rentcar\login.js      | JavaScript |         68 |          0 |         16 |         84 |
+| c:\Users\Hp\hodisanmihai.github-io\rentcar\m2.html       | HTML       |        129 |          0 |         11 |        140 |
+| c:\Users\Hp\hodisanmihai.github-io\rentcar\m4.html       | HTML       |        129 |          0 |         11 |        140 |
+| c:\Users\Hp\hodisanmihai.github-io\rentcar\polo.html     | HTML       |        129 |          0 |         11 |        140 |
+| c:\Users\Hp\hodisanmihai.github-io\rentcar\yaris.html    | HTML       |        129 |          0 |         11 |        140 |
+| Total                                                    |            |      3,910 |          1 |        538 |      4,449 |
++----------------------------------------------------------+------------+------------+------------+------------+------------+

@@ -1,0 +1,35 @@
+Date : 2024-09-04 00:03:18
+Directory : c:\Users\Hp\hodisanmihai.github-io\rentcar
+Total : 9 files,  1528 codes, 0 comments, 208 blanks, all 1736 lines
+
+Languages
++------------+------------+------------+------------+------------+------------+
+| language   | files      | code       | comment    | blank      | total      |
++------------+------------+------------+------------+------------+------------+
+| HTML       |          6 |        774 |          0 |         66 |        840 |
+| CSS        |          2 |        666 |          0 |        113 |        779 |
+| JavaScript |          1 |         88 |          0 |         29 |        117 |
++------------+------------+------------+------------+------------+------------+
+
+Directories
++-------------------------------------------------------+------------+------------+------------+------------+------------+
+| path                                                  | files      | code       | comment    | blank      | total      |
++-------------------------------------------------------+------------+------------+------------+------------+------------+
+| .                                                     |          9 |      1,528 |          0 |        208 |      1,736 |
++-------------------------------------------------------+------------+------------+------------+------------+------------+
+
+Files
++-------------------------------------------------------+------------+------------+------------+------------+------------+
+| filename                                              | language   | code       | comment    | blank      | total      |
++-------------------------------------------------------+------------+------------+------------+------------+------------+
+| c:\Users\Hp\hodisanmihai.github-io\rentcar\580.html   | HTML       |        129 |          0 |         11 |        140 |
+| c:\Users\Hp\hodisanmihai.github-io\rentcar\740.html   | HTML       |        129 |          0 |         11 |        140 |
+| c:\Users\Hp\hodisanmihai.github-io\rentcar\car.css    | CSS        |        665 |          0 |        113 |        778 |
+| c:\Users\Hp\hodisanmihai.github-io\rentcar\car.js     | JavaScript |         88 |          0 |         29 |        117 |
+| c:\Users\Hp\hodisanmihai.github-io\rentcar\home.css   | CSS        |          1 |          0 |          0 |          1 |
+| c:\Users\Hp\hodisanmihai.github-io\rentcar\m2.html    | HTML       |        129 |          0 |         11 |        140 |
+| c:\Users\Hp\hodisanmihai.github-io\rentcar\m4.html    | HTML       |        129 |          0 |         11 |        140 |
+| c:\Users\Hp\hodisanmihai.github-io\rentcar\polo.html  | HTML       |        129 |          0 |         11 |        140 |
+| c:\Users\Hp\hodisanmihai.github-io\rentcar\yaris.html | HTML       |        129 |          0 |         11 |        140 |
+| Total                                                 |            |      1,528 |          0 |        208 |      1,736 |
++-------------------------------------------------------+------------+------------+------------+------------+------------+
